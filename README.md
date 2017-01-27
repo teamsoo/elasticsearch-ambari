@@ -12,7 +12,8 @@ This service has been tested with the following:
 - At least 3 data nodes are required*
 
 ## Required property
-``` zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
+```
+zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
 ```
 
 ## Contributors
