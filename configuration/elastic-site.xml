@@ -28,7 +28,6 @@
     </property>
     <property>
         <name>zen_discovery_ping_unicast_hosts</name>
-        <description>Ideally this gets populated by the list of master eligible nodes (as an acceptable default)</description>
         <value></value>
         <description>Unicast discovery list of hosts to act as gossip routers, in comma separated format.</description>
     </property>
