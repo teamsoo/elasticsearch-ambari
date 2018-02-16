@@ -29,13 +29,13 @@ class Elasticsearch(Script):
         env.set_params(params)
 
         print 'Install the Master'
-        Execute('rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch')
-        Execute("echo \"[elasticsearch-2.x]\n"
-                "name=Elasticsearch repository for 2.x packages\n"
-                "baseurl=https://packages.elastic.co/elasticsearch/2.x/centos\n"
+        Execute('rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch')
+        Execute(format("echo \"[elasticsearch-2.x]\n"
+                "name=Elasticsearch repository for 6.x packages\n"
+                "baseurl=https://artifacts.elastic.co/packages/6.x/yum\n"
                 "gpgcheck=1\n"
-                "gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch\n"
-                "enabled=1\" > /etc/yum.repos.d/elasticsearch.repo")
+                "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+                "enabled=1\" > /etc/yum.repos.d/elasticsearch.repo"))
 
         self.install_packages(env)
 

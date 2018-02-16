@@ -22,7 +22,7 @@
             <name>AMBARI_ELASTICSEARCH</name>
             <displayName>Elasticsearch</displayName>
             <comment>Indexing and Search</comment>
-            <version>2.3.3</version>
+            <version>6.0</version>
             <components>
                 <component>
                     <name>ES_MASTER</name>
@@ -52,7 +52,7 @@
                     <osFamily>any</osFamily>
                     <packages>
                         <package>
-                            <name>elasticsearch-2.3.3</name>
+                            <name>elasticsearch-6.0</name>
                         </package>
                     </packages>
                 </osSpecific>
